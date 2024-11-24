@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyMate - Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>MoneyMate</h1>
+        <div class="converter">
+            <div class="input-group">
+                <label for="inr">Indian Rupees (INR)</label>
+                <input type="number" id="inr" placeholder="Enter amount in INR">
+            </div>
+            <div class="switch-container">
+                <button id="switchBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="input-group">
+                <label for="usd">US Dollars (USD)</label>
+                <input type="number" id="usd" placeholder="Enter amount in USD">
+            </div>
+            <button id="convertBtn">Convert</button>
+            <p id="errorMsg" class="error"></p>
+            <p class="info">Using real-time exchange rates</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
